@@ -2,6 +2,13 @@
 
 Create a one-time snapshot of your filesystem's attributes. Useful for reverse enineering monolythic applications.
 
+## Install
+
+```sh-session
+curl -fLo os-scribe.tar.gz https://github.com/justmiles/os-scribe/releases/download/v0.0.1/os-scribe_0.0.1_linux_x86_64.tar.gz
+sudo tar -xzvf os-scribe.tar.gz -C /usr/local/bin
+```
+
 ## Usage
 
 This tool creates a CSV index of your filesystem. You can parse the CSV with your favorite tool. As shown in the examples below when parsing the os-scribe csv I usually lean on [textql](https://github.com/dinedal/textql).
